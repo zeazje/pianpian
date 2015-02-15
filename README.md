@@ -2,9 +2,9 @@
 <br/>
 ###更新
 将更新三个项目组*(bungami)*<br/>
-○ 茶社 ……………………………………………… Topic 
-○ 未来器械实验室 ………… Future Instrument
-○ 維裏德街 …………………………………… Wiliduja
+○ 茶社 ………………………… Topic <br/>
+○ 未来器械实验室 ………… Future Instrument<br/>
+○ 維裏德街 ……………… Wiliduja<br/>
 ……………………………………………………………………
 <br>
 #### # 
