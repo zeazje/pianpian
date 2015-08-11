@@ -1,0 +1,27 @@
+.dev {border-bottom:2px dotted white;}
+.h1 a {color:black; text-decoration:none;}
+#h1 {font-size:36px; font-style:bold;}
+#h4 {position:relative; left:314px; top:-33px;}
+#h4 span {background-color:#F3F3F3; color:#24292C; border:1px solid #CACACA;}
+#h4 span:hover {background-color:#FFFFFF; color:black;}
+#art{
+border:2px solid black;
+width:860px; height:2500px; padding-top:2px; margin:10px auto 100px 50px;}
+
+#timeline {margin-top:40px;}
+.idea {width:410px; background-color:blue; height:1000px; display:block; margin-left:20px;}
+#line {width:20px; margin-left:430px; background-color:green; height:800px; display:block; position:absolute; top:214px;}
+.update {width:410px; margin-left:450px; background-color:yellow; height:900px; display:block; position:absolute; top:214px;}
+
+/*to top*/
+#toTop{
+ position:fixed;
+ _position:absolute;
+ right:50px;
+ bottom:50px;
+ _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-40);
+ cursor:pointer;
+ display:none;}
+
+
+.footer {background-color:yellow; float:left; text-align:center; width:1000px;}

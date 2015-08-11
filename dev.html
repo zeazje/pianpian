@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="content-language" content="utf-8" />
 <meta name="description" content="翩翩网官方站点"/>
@@ -9,7 +10,7 @@
 <title>翩翩 | Pianpian</title>
 <link rel="stylesheet" type="text/css" href="./src/style.css">
 <link rel="stylesheet" type="text/css" href="./src/menu.css">
-<script type="text/javascript" src="./src/script.js"></script>
+<link rel="stylesheet" type="text/css" href="./src/dev.css">
 </head>
 
 <body>
@@ -18,19 +19,19 @@
  <div id="top">
    <img id="logo" src="./src/Pianpian.png" title="此LOGO仅供内部演示使用"/>
    <span class="nav">
-   <span id="home" title="您已经在这里啦！"><a href="./index.html">首 页</a></span>
+   <span><a href="./index.html" title="您已经在这里啦！">首 页</a></span>
    <span><a href="#" title="去发现大千世界">探 索</a></span>
    <span><a href="#" title="查看所有兴趣组">话 题</a></span>
    <span><a href="#" title="特别的推荐栏目">专 题</a></span>
-   <span id="more"><a href="#" title="打开更多内容">更多</a>&nbsp;</span>| 
+  <span id="more" class="dev"><a href="#" title="→ 下拉菜单查看其他">开发</a>&nbsp;</span>|
    <span>
       <div id="menu">
 <ul><li id="wl"><span id="splash"><a href="#" title="以下拉菜单形式查看"> ▾</a></span>
 <ul class="sub-menu">
-<li id="menu-item"><span><a href="#" target="_blank">官方博客</a></span></li>
-<li id="menu-item"><span><a href="./dev.html" target="_blank">开发日志</a></span></li>
-<li id="menu-item"><span><a href="#" target="_blank">关于我们</a></span></li>
-<li id="menu-item"><span><a href="#" target="_blank">免责声明</a></span></li>
+<li id="menu-item"><span><a href="#">官方博客</a></span></li>
+<li id="menu-item"><span><a href="./dev.html">开发日志</a></span></li>
+<li id="menu-item"><span><a href="#">关于我们</a></span></li>
+<li id="menu-item"><span><a href="#">免责声明</a></span></li>
 <ul></li>
 </ul>
       </div>
@@ -50,40 +51,51 @@
  </div>
  <div id="content">
 
- <div id="article">
- ARTICLE
- </div>
- <div id="float">
-  <div id="guide">
-   <div id="follow">
-    <a href="#" target="_blank"><img src="./src/follow.png"/ width=20px/> 
-	<span>&nbsp; 关注话题</span><span id="folo-num">??</span></a>
-   </div>
-   <div id="fav">
-    <a href="#" target="_blank"><img src="./src/fav.png"/ width=20px/> 
-	<span>&nbsp; 红心文章</span><span id="fav-num"> ??</span></a>
-   </div>
-   <div id="exp">
-    <a href="#" target="_blank"><img src="./src/compass.png"/ width=20px/> 
-	<span>发现更多精彩</span><span id="xp"> ✈</span></a>
-   </div>
-  </div>
+ <div id="art">
  
+<div id="blog">
+ <div class="h1">
+  <span id="h1">翩翩网开发日志</span>
+  <div id="h4"><a id="tansuo" href="#start" title="请鼠标轻击一下，向下浏览"><span>&nbsp;☞ 查看历程 ◕‿-。</span></a></div>
  </div>
+ <div id="timeline">
+   <div class="idea">
+   
+   </div>
  
-  <div id="footer">
+   <div id="line">
+   
+   </div>
+ 
+   <div class="update">
+   
+   </div>
+   
+   <div name="start" id="start">启程<div>
+ </div>
+
+ </div>
+
+ 
+
+
+
+
+ </div>
+
+
+<div class="footer">
+  <div id="foot">
  <!--PianpianWeb &copy;Leptideas 2015 &nbsp; &nbsp; PianpianWeb Committee &nbsp; All Rights Reserved. &nbsp; A Leptworld Member Product-->
  翩翩网 &copy;Leptideas 2015 &nbsp;&nbsp;翩翩项目组 版权所有.&nbsp; 翩翩项目组为联腾世界成员
- </div>
- </div>
-
-
-
+  </div>
+</div>  
 
  
 </div>
 <!--Back to top-->
-
+  <img src="./src/top.png" id="toTop"/>
+  <script style="text/javascript" src="./src/totop.js"></script>
 
 </body>
 

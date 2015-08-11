@@ -1,0 +1,64 @@
+/*---------------------------------
+==========感谢您来到翩翩===========
+Author: Pincury Zeazje
+Contact: @zeazje
+OriginalDate: 2015-07-19
+Copyright (C) Leptideas 2015
+Pianpian Committee All Rights.
+---------------------------------*/
+body {margin:0; font-family:微软雅黑,文泉驿微米黑,Microsoft Yahei; background-color:#EDEDEF}
+#top-header {background-color:#24292C; height:88x;}
+#top{
+margin:auto;
+background-color:#24292C;
+width:1000px; height:88px;}
+ #logo {margin:25px 200px auto 10px;}
+ .nav {position:absolute; top:37px;}
+ .nav span {color:#FFFFFF; font-size:16px; margin-right:30px;}
+ .nav a:link, .nav a:visited, .nav a  {color:white; text-decoration:none;}
+ .nav a:hover {border-bottom:2px solid white;}
+ #home {border-bottom:2px dotted white;}
+ #more {margin-right:0;}
+ #more  a:hover {border-bottom:none;}
+ #splash a:hover {border-bottom:none; border-top:2px solid white;}
+ #splash {text-align:center;}
+ 
+ .hi {color:white; margin-left:700px;}
+ #hi {position:relative; top:-42px; left:60px; font-size:22px; text-align:right;}
+ #expl {position:relative; top:-18px; left:-5px; font-size:14px; width:190px;}
+ #user img {position:relative; top:-72px; left:944px; width:48px;}
+#content{
+margin: auto;
+margin-top:6px;
+width:1000px;}
+/*正文内容开始*/
+#article{
+background-color:orange;
+float:left;
+width:640px; height:2070px;
+text-align:center; padding-top:2px;}
+/*侧边栏内容*/
+#float{
+/*background-color:green;*/
+float:right;
+width:350px; height:700px;
+padding-top:2px;}
+ #guide {background-color:#F3F3F3; width:250px; height:120px;
+ position:relative; top:20px; left:60px;
+border-style:none solid solid none; border-color:#CACACA; border-width:2px;}
+ #guide div {height:38px; padding:1px}
+ #guide a{color:#444455; text-decoration:none;}
+ #guide img {position:relative; top:5px; left:5px;}
+ #guide span {position:relative; top:1px; left:5px;}
+  #exp span {position:relative; left:14px;}
+  #folo-num {margin-left:115px; padding-right:15px;}
+  #fav-num {margin-left:110px; padding-right:16px;}
+  #xp {margin-left:80px; padding-right:16px;}
+ #guide div:hover {background-color:#FFFFFF;} #guide a:hover{color:black;}
+#footer{
+width:1000px;
+float:left;
+margin-top:4px;
+text-align:center;
+font-size:12px;
+background-color:yellow;}
