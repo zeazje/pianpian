@@ -1,0 +1,43 @@
+@charset "utf-8";
+body {margin: 0; padding: 0;}
+#header {background: #F5F5F5; font-size: 0.9em; width: 100%; height: 50px;
+    -webkit-box-shadow:0 1px 2px #E5E5E1;  
+    -moz-box-shadow:0 1px 2px #E5E5E1;  
+    box-shadow:0 1px 2px #E5E5E1;
+	}
+ #h1 div {line-height: 50px; margin: 0 auto;
+ 	 width: 1000px; height: 50px; /*background: #fff;*/ font-size: 1.7em; }
+  #h1 img {vertical-align:middle;}
+  #header-decroate {float:right; font-size:1.0em; }
+
+#container {width: 1000px; margin: 10px auto; font-size:0.9em;}
+#decroation {padding: 10px 0;}
+	#box {width: 14px; height: 14px;}
+		#red {background: red;}
+		#orange {background: orange;}
+		#yellow {background: yellow;}
+		#green {background: green;}
+		#blue {background: blue;}
+#project-list {margin:15px auto 10px 27px;}
+	.color-box {width: 22px;}
+	.name {width: 200px;}
+	.decro {width: 500px;}
+	.link {width:15px;}
+		.link a {color:blue; font-style: bold; text-decoration: none;}
+	.final-bold {font-style: bold; font-size: 1.2em;}
+		.red {background: red;}
+		.orange {background: orange;}
+		.yellow {background: yellow;}
+		.green {background: green;}
+		.blue {background: blue;}
+#post p {font-size: 1.4em;}
+#footer {width: 100%; text-align: center; height: 75px; background: #F5F5F1;
+	-webkit-box-shadow:0 -1px 3px #ccc;  
+    -moz-box-shadow:0 -1px 3px #ccc;  
+    box-shadow:0 -1px 3px #ccc;
+	padding-top: 6px;}
+	#fot {margin: 4px auto;}
+	#fot-d {font-size: 0.8em; padding: 6px auto 10px;}
+
+#totop {position: absolute; right: 40px; bottom: 50px;}
+#totop a {text-decoration: none;}

@@ -17,7 +17,7 @@
 <div id="top" name="top">
 <div id="snap">
 <a href="./"><span class="nav" id="index">首页</span></a>
-<a href=""><span class="nav">项目</span></a>
+<a href="./bungami"><span class="nav">项目</span></a>
 <a href=""><span class="nav">特色</span></a>
 <a href=""><span class="nav">课程</span></a>
 <a href=""><span class="nav">更多</span></a>
@@ -44,7 +44,7 @@
 <!--Screen2 start-->
 
 
-<div id="toTop"><a href="#top"><img src="./src/toTop.png" id="toTop" width="36px" alt="toTop" border="0"/></a></div>
+<div id="toTop" style="visible:hidden;"><a href="javascript:scroll(0,0);"><img src="./src/toTop.png" id="toTop" width="36px" alt="toTop" border="0"/></a></div>
 </div>
 
 <div id="footer">
@@ -53,6 +53,19 @@
 <p>&copy; 2015 PROJECT Pianpian&nbsp;Pianpianweb.com All Rights Reserved.</p>
 </div>
 </div>
+
+<!--Embeded-->
+<script>
+var oTop=document.getElementById('toTop');
+function toTop(){
+	if (document.documentElement.scrollTop<600){
+	oTop.style.visibility="hidden";
+	}
+	else if (document.documentElement.scrollTop>=600){
+	oTop.style.visibility="visible";
+	}
+}
+</script>
 </body>
 
 </html>
