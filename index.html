@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="content-language" content="utf-8" />
 <meta name="description" content="翩翩网官方站点"/>
 <meta name="keywords" content="翩翩, 翩翩|Pianpian, Pianpian, 翩翩网, 社区, 轻社区"/>
@@ -12,64 +12,332 @@
 </head>
 
 <body>
-<div id="screen1">
-<!--顶部导航条-->
-<div id="top" name="top">
-<div id="snap">
-<a href="./"><span class="nav" id="index">首页</span></a>
-<a href="./bungami"><span class="nav">项目</span></a>
-<a href=""><span class="nav">特色</span></a>
-<a href="./courses"><span class="nav">课程</span></a>
-<a href=""><span class="nav">更多</span></a>
-</div>
+<div id="screen1" class="screen1"><div id="s1_bg">
+<!--LOGO op-->
+<div id="topL"><img src="./res/topL.png" width="150px" border="0"  usemap="#topLeft"/>
+<map name="topLeft" id="topLeft">
+<area shape="polygon" coords="75,0,154,0,0,153,0,74,4,72,4,76,78,4,73,4" href="./"/></map>
+</div><!--LOGO end-->
+
+<!--顶部悬置导航-->
+<div class="navBar" id="topNav">
+<a href="javascript:scroll(0,0)" style="text-decoration:none;"><div class="logoImg"></div></a>
+<ul>
+<li class="navLi" title="Gallery" onclick="goPos('pre_works')"><img src="./res/works.png"/ width="25px"> 展廊</li>
+<li class="navLi" title="</>" onclick="goPos('dev_pre')"><img src="./res/dev.png"/> 设计</li>
+<li class="navLi" title="Contact" onclick="goPos('blogger')"><img src="./res/blog.png" width="24px"/> 博客</li>
+<li class="navLi" title="info" onclick="goPos('info')"><img src="./res/info.png"/ width="23px"> 关于</li>
+</ul>
 </div>
 
-<!--占位符-->
-<div class="height1"></div>
-<!--顶部Panner-->
-<div id="imageX">
-<a href="./"><img src="./src/header.png" width="150px" alt="A Fantasy World" border="0"/></a>
-</div>
-<!--顶部描述-->
-<div id="decoration">
-<img src="./src/banner.png" height="90px" alt="~欢迎~"/>
-<p><a id="ar2" href="#s2top"><img src="./src/screen2.png" width="24px" border="0"/></a></p>
+<!--Top Toobar op-->
+<div class="topBar">
+<img id="home" src="./res/home.png" width="32px" onclick="nav_go('./')"/>
+<img id="playing" src="./res/music_on.png" width="32px" title="显示/隐藏音乐模块" onclick="player()"/>
+<img src="./res/blogger.png" width="32px" title="官方博客" onclick="nav_go('#')"/>
+
+<div id="playerFrame">
+<object type="application/x-shockwave-flash" data="./res/dewplayer.swf" width="234" height="20" id="dewplayer" name="dewplayer"> 
+  <param name="wmode" value="transparent"/> 
+  <param name="movie" value="./res/dewplayer.swf"/> 
+  <param name="flashvars" value="mp3=./music/a.mp3&autoplay=0&autoreplay=1&randomplay=1&javascript=on&volume=100"/>
+</object>
 </div>
 
+
 </div>
+<!--Top Toobar end-->
+
+<!--RightTop↗挂饰::晴天娃娃 3种随机变-->
+<div id="rightop">
+<img id="sunny" src="./res/sunny_1.png" width="100px" style="position:absolute; top:4px; right:4px;">
+</div>
+
+<!--Left Nav op-->
+<div id="leftNav">
+<div class="_leftNav">
+<div class="navBox"></div>
+<div class="navBox"></div>
+<div class="navBox"></div>
+<div class="navBox"></div>
+</div>
+<div class="_rightNav" onclick="shh()"><!--后续加入onmouseOver效果-->
+<img id="s1Nav" src="./res/hide.png" border="0" width="18px" alt="<"/>
+</div>
+</div>
+<!--Left Nav end-->
+</div>
+</div>
+<!--Screen1 End-->
 
 <div id="screen2">
 <!--居中定位-->
-<div class="center" id="s2top" name="s2top"></div>
+<div class="center" id="s2top" name="s2top">
 <!--Screen2 start-->
+<div class="navBar">
+<a href="javascript:scroll(0,0)" style="text-decoration:none;"><div class="logoImg"></div></a>
+<ul>
+<li class="navLi" title="Gallery" onclick="goPos('s2top')"><img src="./res/works.png"/ width="25px"> 展廊</li>
+<li class="navLi" title="</>" onclick="goPos('dev_pre')"><img src="./res/dev.png"/> 设计</li>
+<li class="navLi" title="Contact" onclick="goPos('blogger')"><img src="./res/blog.png" width="24px"/> 博客</li>
+<li class="navLi" title="info" onclick="goPos('info')"><img src="./res/info.png"/ width="23px"> 关于</li>
+</ul>
+</div>
+</div>
 
+<!--container start-->
+<div id="container">
+  <div id="description"><h3>精彩生活的在线体现</h3>
+  <p>在这里，与喜欢的一切相遇</p><p id="pre_works">遇见不期而至的惊喜 ☺</p><hr class="hr"/></div>
+  <div id="content">
+    <div id="works">
+      <h3>Gallery 展廊</h3>
+      <div id="works_frame">
+        <div class="des_banner">
+          <span class="descript">来自 [<a href="">项目组</a>]</span>
+          <span class="detail"><a href="">更多</a></span>
+        </div>
+        <div id="works_group">
+          <!--作品组-->
+          <div class="works_box" id="w_box1" onclick="newWindow('http://www.pianpianweb.com/bungami/')">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+          <div class="works_box" id="w_box2">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+          <div class="works_box" id="w_box3">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+          <div class="works_box" id="w_box4">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+          <div class="works_box" id="w_box5">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+          <div class="works_box" id="w_box6">
+            <div class="_descript"><span class="_des-paragph">遇见喜欢的东西</span></div>
+          </div>
+        </div>
+        <p class="on_hover" onclick="newWindow('#');" id="dev_pre">→更多精彩 <a class="orange_link">查看</a> 所有项目</p>
+      </div>
+    </div>
+    <hr class="hr"/>
+    <div id="dev">
+    <h3>Dev 设计</h3>
+   <div class="table">
+    <div class="tr_1">
+      <span class="row_1"></span><span class="row_2"><b>ProjectName</b></span><span class="row_3"><b>Description</b></span><span class="row_4"></span>
+    </div>
+    <div class="tr_2">
+      <span class="row_1"><span class="red">■</span></span><span class="row_2">Balcony</span><span class="row_3">阳台计划（建筑、构造、布局方面）</span><span class="row_4"></span>
+    </div>
+    <div class="tr_1">
+      <span class="row_1"><span class="yel">■</span></span><span class="row_2">Dashracter</span><span class="row_3">与虚拟声音、虚拟人形相关的计划</span><span class="row_4"></span>
+    </div>
+    <div class="tr_2">
+      <span class="row_1"><span class="ora">■</span></span><span class="row_2">Gallerium</span><span class="row_3">类似于响巢看看版式的图片分类（分享）推荐站点计划</span><span class="row_4"></span>
+    </div>
+    <div class="tr_1">
+      <span class="row_1"><span class="ora">■</span></span><span class="row_2">Girlcess-wiki</span><span class="row_3"> AGCN的top_Heroine（你我喜爱的女主角）维基计划</span><span class="row_4"></span>
+    </div>
+    <div class="tr_2">
+      <span class="row_1"><span class="gre">■</span></span><span class="row_2">Moric</span><span class="row_3">万事皆可萌——系统/软件的美化项目</span><span class="row_4"></span>
+    </div>
+    <div class="tr_1">
+      <span class="row_1"><span class="yel">■</span></span><span class="row_2">Tomorrow-post</span><span class="row_3">明日信（涵盖明信片与书签）自制计划（与Postical计划有关）</span><span class="row_4"></span>
+    </div>
+    <div class="tr_2">
+      <span class="row_1">&nbsp;</span><span class="row_2">...</span><span class="row_3">...</span><span class="row_4"></span>
+    </div>
+    <br/><p class="on_hover" onclick="newWindow('#');" id="dev_pre">查看 <a class="orange_link"><i>bungami</i></a>&nbsp;&nbsp;了解全部项目</p>
+    
+    <div class="tr">
+      <li><span class="red">■</span><span class="tr_p">&nbsp;:已停止</span></li>
+      <li><span class="ora">■</span><span class="tr_p">&nbsp;:已暂停</span></li>
+      <li><span class="yel">■</span><span class="tr_p">&nbsp;:进行中(缓慢,次要支持)</span></li>
+      <li><span class="gre">■</span><span class="tr_p">&nbsp;:进行中(正常,主要支持)</span></li>
+      <li><span class="blu">■</span><span class="tr_p">&nbsp;:待计划(未来计划)</span></li>
+    </div>
+   </div> 
+    </div>
+    <div id="blogger">
+    <hr class="hr"/>
+    <h3>Blog 博客</h3>
+    </div>
+    <div id="info">
+    <hr class="hr"/>
+    <h3>info 关于</h3>
+    </div>
+    <div id="post">
+    <hr class="hr"/><br/>
+    <h3>最后</h3>
+    <p>你要知道:</p>
+    <p>翩翩是你也是我</p>
+    </div>
+  </div>
+</div>
 
-<div id="toTop" style="visible:hidden;"><a href="javascript:scroll(0,0);"><img src="./src/toTop.png" id="toTop" width="36px" alt="toTop" border="0"/></a></div>
 </div>
 
 <div id="footer">
 <div class="foot">
-<img src="./src/ppr.png" alt="PROJECT Pianpian" width="32px"/>
-<p>&copy; 2015 PROJECT Pianpian&nbsp;Pianpianweb.com All Rights Reserved.
-<span><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256881425'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/stat.php%3Fid%3D1256881425%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script></span>
-</p>
+<div id="footer_logo"></div>
+<p>&copy; 2016 PROJECT Pianpian(PianpianWeb)&nbsp; Leptideas All Rights Reserved.</p>
 
 </div>
 </div>
 
-<!--Embeded-->
-<script>
-var oTop=document.getElementById('toTop');
-function toTop(){
-	if (document.documentElement.scrollTop<600){
-	oTop.style.visibility="hidden";
+<!--TopBar Scripts-->
+<script type="text/javascript">
+
+/*--页面跳转--*/
+function nav_go(url){
+	window.location.href = url; 
+}
+function newWindow(url){
+  window.open(url);  
+}
+/*id锚点跳转
+function toName(name){
+	location.hash = name;
+}
+*/
+/*获取元素高度*/
+ 
+function getPosition(Id){
+	var oElement = document.getElementById(Id);
+	var posY = oElement.offsetTop;
+	return posY;
+}
+
+/*跳转到指定位置*/
+function goPos(Id){
+	var posY = getPosition(Id);
+	//alert(posY);
+	 window.scrollTo(0,posY);
+}
+
+/*Player Show/Hide Event*/
+var status2 = 0; //声明伪常量 0:Show
+function player(){
+	var pp = document.getElementById('playing');
+	var player = document.getElementById('dewplayer');
+	status2 = parseInt(status2) + 1;
+	if (status2%2 == 1){//切换成Silence状态::Hide
+		pp.src = "./res/music.png";
+
+		player.style.visibility = "hidden";
 	}
-	else if (document.documentElement.scrollTop>=600){
-	oTop.style.visibility="visible";
+	else {//切换成Play状态::Show
+		pp.src = "./res/music_on.png";
+
+		player.style.visibility = "";
 	}
 }
+
+<!--SunnyDoll Random Show Model-->
+function sunnyImg(){
+	var adds = document.getElementById('sunny');
+	var ret = Math.floor(Math.random()*3+1);
+	var num;
+	if (ret==1){num = "1.png"}
+	else if (ret==2){num = "2.png"}
+	else if (ret==3){num = "3.png"}
+	adds.src = "./res/sunny_" + num;
+}
+sunnyImg();
+
+/*Screen1 background-Image*/
+function screen1Img(){
+  var n = 3; //预置的背景图片数目
+	var adds = document.getElementById('screen1');
+	var ret = Math.floor(Math.random()*n+1);
+	var num;
+	if (ret==1){num = "a.jpg"}
+	else if (ret==2){num = "b.jpg"}
+	else if (ret==3){num = "c.jpg"}
+	var background = "url(" + '"' + "./res/bg_" + num + '"' + ") no-repeat";
+  var value = "background:" + background + ";" + "background-size:cover;";
+  adds.setAttribute("style",value);
+}
+screen1Img();
+/*--左侧导航条显隐藏--*/
+var status3 = 0;
+function shh(){
+	var img = document.getElementById('s1Nav');
+	var navFrame = document.getElementById('leftNav');
+	if (status3==0){
+		navFrame.style.marginLeft = "-60px";
+		img.src = "./res/show.png";
+		status3 = 1;
+	}
+	else {
+		navFrame.style.marginLeft = "0";
+		img.src = "./res/hide.png";
+		status3 = 0;
+	}
+}
+
 </script>
-
+<!--Back to top-->
+ <img src="./res/toTop.png" id="toTop" width="36px" alt="↑Top"/>
+<script>
+/*backToTop*/
+(function(win, doc){
+ //变量
+ var compatMode = doc.compatMode,
+  isChrome = win.navigator.userAgent.indexOf("Chrome") === -1 ? false : true,
+  scrollEle = compatMode === "BackCompat" || isChrome ? doc.body : doc.documentElement,
+  clientEle = compatMode === "BackCompat" ? doc.body : doc.documentElement,
+  toTopImg = doc.getElementById("toTop"),
+  rate = 0.6,
+  timeGap = 10;
+ //返回顶部图标的点击响应
+ toTopImg.onclick = function(){
+  var moveInterval = setInterval(moveScroll, timeGap);
+  function moveScroll(){
+   var scrollTop = scrollEle.scrollTop;
+   if(scrollTop === 0){
+    clearInterval(moveInterval);
+    return ;
+   }
+   scrollEle.scrollTop = scrollTop * rate;
+  }
+ };
+ //滚动时判断是否显示返回顶部图标
+ win.onscroll = function(){
+  var display = toTopImg.style.display;
+  if(scrollEle.scrollTop > 300){ //ori一屏:clientEle.clientHeight
+   if(display !== "block"){
+    toTopImg.style.display = "block";
+   }
+  }else{
+   if(display !== "none"){
+    toTopImg.style.display = "none";
+   }
+  }
+  /*--滚动式动态显示导航条--*/
+  var dyNav = document.getElementById('topNav');
+  var stNav = document.getElementById('s2top');
+  var top=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;
+  if (top > document.documentElement.clientHeight){
+    dyNav.style.display = "block";
+    //stNav.style.display = "none";
+  }
+  else{
+    dyNav.style.display = "none";
+    //stNav.style.display = "block";
+	}
+  if (top > document.documentElement.clientHeight + 46){
+    //dyNav.style.display = "block";
+    stNav.style.display = "none";
+  }
+  else{
+    //dyNav.style.display = "none";
+    stNav.style.display = "block";
+	}
+ };
+})(window, document);  
+</script>
 </body>
-
 </html>
